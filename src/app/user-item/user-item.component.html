@@ -1,0 +1,27 @@
+<div class="four wide column center aligned votes">
+    <div class="ui value center aligned">{{user.id}}</div>
+</div>
+<div class="four wide column center aligned votes">
+    <div class="ui value center aligned">{{user.name}}</div>
+</div>
+<div class="four wide column center aligned votes">
+    <div class="ui value center aligned">{{user.email}}</div>
+</div>
+<div class="four wide column center aligned votes">
+    <div class="ui value center aligned">{{user.rating}}</div>
+    <ul class="ui horizontal list voters">
+        <li class="item">
+            <a href (click)="ratingUp()">
+                <i class="arrow up icon"></i>
+                Up
+            </a>
+        </li>
+        <li class="item">
+            <a href (click)="ratingDown()">
+                <i class="arrow down icon"></i>
+                Down
+            </a>
+        </li>
+
+    </ul>
+</div>

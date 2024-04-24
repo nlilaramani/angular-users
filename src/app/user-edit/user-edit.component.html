@@ -1,0 +1,17 @@
+<div class="ui raised segment">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" class="ui form">
+        <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" 
+            placeholder="name" [(ngModel)]="name">
+        </div>
+        <div class="field">
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" 
+            placeholder="email" [(ngModel)]="email">
+        </div>
+        <div>
+            <button type="submit" class="ui button">Add User</button>
+        </div>
+    </form>
+</div>
