@@ -3,7 +3,11 @@
         <div class="field">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" 
-            placeholder="name" [(ngModel)]="name">
+                minlength="3"
+                required="true"
+                placeholder="name" 
+                [(ngModel)]="name"
+                #nm="ngModel">
         </div>
         <div class="field">
             <label for="email">E-mail:</label>
@@ -11,7 +15,11 @@
             placeholder="email" [(ngModel)]="email">
         </div>
         <div>
-            <button type="submit" class="ui button">Add User</button>
+            <button type="submit" class="ui button" [style.color]="'red'" (click)="validate(f.form)">Add User</button>
         </div>
+        <div class="ui negative message"
+            *ngIf="f.invalid && (f.dirty)">
+            Errors on the form. Pl fix.
+    </div>
     </form>
 </div>

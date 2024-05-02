@@ -38757,4 +38757,10 @@
  /*******************************
           Site Overrides
  *******************************/
- 
+ .ui.grid.row.active:hover{
+  background-color:beige;
+  cursor: pointer;
+
+ }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

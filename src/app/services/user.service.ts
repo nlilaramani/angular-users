@@ -17,17 +17,15 @@ export class UserService{
         ]
     }
 
-    addUserHttp(user:User):void{
+    addUserHttp(user:User):Observable<Object>{
         var useradd={
             id:user.id,
             name:user.name,
             email:user.email
         };
-        this.http.post('http://localhost:8090/users'
+        return this.http.post('http://localhost:8090/users'
             , useradd
-        ).subscribe(response=>{
-            console.log("Post Response",response);
-        })
+        );
         }
     
 

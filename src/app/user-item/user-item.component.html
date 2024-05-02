@@ -1,15 +1,15 @@
-<div class="four wide column center aligned votes">
+<div class="four wide column center aligned">
     <div class="ui value center aligned">{{user.id}}</div>
 </div>
-<div class="four wide column center aligned votes">
+<div class="four wide column center aligned">
     <div class="ui value center aligned">{{user.name}}</div>
 </div>
-<div class="four wide column center aligned votes">
+<div class="four wide column center aligned">
     <div class="ui value center aligned">{{user.email}}</div>
 </div>
-<div class="four wide column center aligned votes">
+<div class="two wide column center aligned">
     <div class="ui value center aligned">{{user.rating}}</div>
-    <ul class="ui horizontal list voters">
+    <ul class="ui horizontal list">
         <li class="item">
             <a href (click)="ratingUp()">
                 <i class="arrow up icon"></i>
@@ -22,6 +22,13 @@
                 Down
             </a>
         </li>
-
     </ul>
+</div>
+<div class="two wide column center aligned">
+    <div class="item">
+        <a href="" (click)="deleteUser(user.id)">
+                <i class="delete icon"></i>
+                Delete
+        </a>
+    <div>
 </div>

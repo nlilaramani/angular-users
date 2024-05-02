@@ -16,6 +16,8 @@ import { UserItemComponent } from './user-item/user-item.component';
 import { UserService } from './services/user.service';
 import {HttpClientModule, HttpClient } from '@angular/common/http';
 import { UserEditComponent } from './user-edit/user-edit.component';
+import {MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes:Routes=[
   {path:'home',component:HomeComponent},
@@ -41,7 +43,9 @@ const routes:Routes=[
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MatDialogModule,
     ],
   providers: [
     HashLocationStrategy,
